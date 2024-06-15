@@ -1,16 +1,10 @@
-# cute_weather_app
+# Cute Weather App
+It is a project coded on Flutter based on a design made by a different designer. The data is not fetched in real-time. The data is just placeholder text. It is a project made only to test some pre-coded widgets.
 
-A new Flutter project.
 
-## Getting Started
+## Screenshots
+<br><br><br>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Home Page
+<img src="/screenshots/home_page.png" alt="Screenshot from App" width="300" />
+<br><br>
