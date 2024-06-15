@@ -1,6 +1,8 @@
 import 'package:cute_weather_app/widgets/cf_switch.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/text_with_icon.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -28,33 +30,42 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
-          children: [
-            Center(child: Image.network('https://i.hizliresim.com/c4t4ab0.jpg', width: 200,)),
-            SizedBox(height: 20,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                RichText(
-                    text: TextSpan(
-                      children: [
-                        WidgetSpan(child: Icon(Icons.arrow_drop_down_outlined)),
-                        TextSpan(text: "24°", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.black)),
-                      ]
-                    )
+                Center(child: Image.network('https://i.hizliresim.com/c4t4ab0.jpg', width: 200,)),
+                SizedBox(height: 20,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    RichText(
+                        text: TextSpan(
+                            children: [
+                              WidgetSpan(child: Icon(Icons.arrow_drop_down_outlined)),
+                              TextSpan(text: "24°", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.black)),
+                            ]
+                        )
+                    ),
+                    Text("40°", style: TextStyle(fontSize: 120, fontWeight: FontWeight.w100),),
+                    RichText(
+                        text: TextSpan(
+                            children: [
+                              WidgetSpan(child: Icon(Icons.arrow_drop_up)),
+                              TextSpan(text: "42°", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.black)),
+                            ]
+                        )
+                    ),
+                  ],
                 ),
-                Text("40°", style: TextStyle(fontSize: 120, fontWeight: FontWeight.w100),),
-                RichText(
-                    text: TextSpan(
-                        children: [
-                          WidgetSpan(child: Icon(Icons.arrow_drop_up)),
-                          TextSpan(text: "42°", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.black)),
-                        ]
-                    )
+                SizedBox(height: 20,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    TextWithIcon(text: "61%", icon: Icon(Icons.water_drop_outlined),),
+                    TextWithIcon(text: "5 km/h", icon: Icon(Icons.wind_power_outlined),),
+                    TextWithIcon(text: "742 mbar", icon: Icon(Icons.speed_outlined),)
+                  ],
                 ),
               ],
-            )
-          ],
         ),
       ),
     );
