@@ -3,7 +3,7 @@ It is a project coded on Flutter based on a design made by a different designer.
 
 
 ## Screenshots
-<br><br><br>
+<br>
 
 ### Home Page
 <img src="/screenshots/home_page.png" alt="Screenshot from App" width="300" />
